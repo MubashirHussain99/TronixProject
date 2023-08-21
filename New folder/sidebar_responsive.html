@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="flex justify-between w-[100%]">
+        <!-- SideBar -->
+        <div class="w-[100%] sm:w-[30%] md:w-[20%] bg-gray-800 h-screen fixed sm:relative z-20 " id="mySidebar">
+            <div class="w-[100%] h-screen fixed sm:relative flex flex-col justify-evenly items-center px-10">
+                <div class="flex justify-between  w-[100%]">
+                    <div class="text-yellow-600 font-extrabold lg:text-[25px] text-[20px]"> MUBASHIR <br> HUSSAIN</div>
+                    <button class="bg-gray-800 text-[40px] sm:hidden text-white font-semibold" onclick="w3_close()">&times;</button>
+                </div>
+                <div class="flex flex-col items-center lg:items-start space-y-8  w-[100%]">
+                    <div><a href="#" class="text-[white] text-[20px] font-semibold ">Home</a></div>
+                    <div><a href="#" class="text-[white] text-[20px] font-semibold ">About</a></div>
+                    <div><a href="#" class="text-[white] text-[20px] font-semibold ">Contact Us</a></div>
+                    <div><a href="#" class="text-[white] text-[20px] font-semibold ">Services</a></div>
+                    <div><a href="#" class="text-[white] text-[20px] font-semibold ">Help</a></div>
+                </div>
+                <div class="flex space-x-5 items-center">
+                    <i class="fa-brands fa-square-twitter text-[yellow] text-[20px]"></i>
+                    <i class="fa-regular fa-face-frown-open text-[yellow] text-[20px]"></i>
+                    <i class="fa-solid fa-ghost text-[yellow] text-[20px]"></i>
+                    <i class="fa-brands fa-canadian-maple-leaf text-[yellow] text-[30px]"></i>
+                </div>
+                <div><button type="button" class="px-5 py-2 rounded-full bg-blue-500 text-white font-semibold w-[100px]">Log Out</button></div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="w-[100%] md:w-[80%] h-screen overflow-y-scroll flex flex-col items-center">
+           <div class="flex justify-between sm:px-[5%] p-2 py-4 border-b fixed left-0 sm:left-[30%] md:left-[20%] right-0 top-0  sm:space-x-3 bg-white">
+                <div class="text-[25px]  text-Black  sm:hidden" id="main">
+                    <i class="fa-solid fa-bars fa-beat-fade" id="openNav" onclick="w3_open()"></i>
+                </div>
+                <div class="border rounded-full px-2 space-x-2 md:w-[100%] flex items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search" class="outline-none py-2 w-[100%]"/>
+                </div>
+                <button class="font-semibold bg-blue-500 text-white rounded-[5px] sm:rounded-full px-1 sm:px-3 sm:text-[16px] text-[12px]">Search</button>
+            </div>
+            <!-- Implement the Slider -->
+            <div class="lg:w-[90%] w-[96%] mx-auto mt-[100px]">
+                <div class="slide">
+                    <img class="w-full lg:h-[600px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-1.jpeg">
+                    <div class="bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower One Caption</div>
+                </div>
+                <div class="slide">
+                    <img class="w-full lg:h-[600px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg">
+                    <div class="bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Two Caption</div>
+                </div>
+                <div class="slide">
+                    <img class="w-full lg:h-[600px] object-cover" src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
+                    <div class="bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Three Caption</div>
+                </div>
+                
+                <br>
+                <!-- The dots -->
+                <div class="flex justify-center items-center space-x-5">
+                    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+                    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+                    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+                </div>
+            </div>
+            <!-- divs -->
+            <div class="md:flex flex-col w-[96%] lg:w-[90%] items-center py-10 lg:space-y-5 space-y-5 lg:space-y-0">
+                <div class="sm:flex-row sm:flex w-[100%] sm:h-[200px] border rounded-[10px] overflow-hidden shadow bg-white items-center">
+                    <div class="w-[100%] sm:w-[40%]">
+                        <img src="C:\Users\Nexomos\Desktop\Tailwind\band.jpg" alt="" class="h-[200px] w-[100%]" />
+                    </div>
+                    <div class="flex flex-col justify-evenly py-5 px-2.5 w-[100%] sm:w-[60%]">
+                        <div class="text-blue-700 xl1:text-[14px] font-medium">Company Name</div>
+                        <div class="font-semibold xl1:text-[14px]">Incredible accommodation for your team.</div>
+                        <div class="text-[12px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eumdoloremque deserunt consectetur ducimus? Ea, aspernatur deserunt consectetur ducimus?.</div>
+                    </div>
+                </div>
+                <div class="sm:flex-row sm:flex w-[100%] sm:h-[200px] border rounded-[10px] overflow-hidden shadow bg-white items-center">
+                    <div class="w-[100%] sm:w-[40%]">
+                        <img src="C:\Users\Nexomos\Desktop\Tailwind\band.jpg" alt="" class="h-[200px] w-[100%]" />
+                    </div>
+                    <div class="flex flex-col justify-evenly py-5 px-2.5 w-[100%] sm:w-[60%]">
+                        <div class="text-blue-700 xl1:text-[14px] font-medium"> Company Name</div>
+                        <div class="font-semibold xl1:text-[14px]">Incredible accommodation for your team.</div>
+                        <div class="text-[12px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum doloremque deserunt consectetur ducimus? Ea, aspernatur deserunt consectetur ducimus?.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards -->
+            <div class="md:flex justify-between md:space-x-14 py-[20px] lg:w-[90%] w-[96%]">
+                <div class="flex flex-col items-center">
+                    <div class="font-semibold">Name</div>
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\bandm.jpg" alt="" class="sm:w-[800px] md:w-[100%] w-[700px] rounded-[10px]"></div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="font-semibold">Name</div>
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\bandm.jpg" alt="" class="sm:w-[800px] md:w-[100%] w-[700px] rounded-[10px]"></div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="font-bold">Name</div>
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\bandm.jpg" alt="" class="sm:w-[800px] md:w-[100%] w-[700px] rounded-[10px]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar");
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav");
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+       // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
+        // change slide with the prev/next button
+        function moveSlide(moveStep) {
+            showSlide(slideIndex += moveStep);
+        }
+        // change slide with the dots
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName('dot');
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            // hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.add('hidden');
+            }
+            // remove active status from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('bg-yellow-500');
+                dots[i].classList.add('bg-green-600');
+            }
+            // show the active slide
+            slides[slideIndex - 1].classList.remove('hidden');
+            // highlight the active dot
+            dots[slideIndex - 1].classList.remove('bg-green-600');
+            dots[slideIndex - 1].classList.add('bg-yellow-500');
+        }
+    </script>
+</body>
+</html>

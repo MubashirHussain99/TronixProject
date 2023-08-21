@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tronix Solution</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div>
+        <!-- top-First-Nav -->
+        <div
+            class="flex sm:flex-row flex-col bg-[white] sm:h-[50px] h-[100px] justify-between items-center px-[5%] lg:px-[15%] border-b border-gray-300 lg:text-[18px]">
+            <div>
+                Mon-Fri: 8:00 AM - 6:30 PM
+            </div>
+            <div class="flex sm:flex-row flex-col w-[100%] sm:w-auto text-[14px] sm:text-[16px]">
+                <div class="flex sm:w-[50%] space-x-5">
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_Services.html"><button class="w-[50%] md:w-auto">All Services</button></a>
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_Blog_news.html"><button class="w-[50%] md:w-auto">Careers</button></a>
+                </div>
+                <div class="flex sm:w-[50%] sm:flex-row items-center justify-center flex-col sm:space-x-5">
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_Blog_news.html"><div class=" sm:w-[30%] md:w-auto">News</div></a>
+                    <div class="flex space-x-2 sm:w-[70%] md:w-auto">
+                        <div><i class="fa-regular fa-envelope"></i></div>
+                        <div>media@tronix.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- top-Second-Nav -->
+
+        <!-- sidebar on lg -->
+        <div class="w-[230px] bg-[white] h-screen fixed left-0 z-30 top-0 lg:hidden border" id="mySidebar">
+            <div class="flex justify-between p-5 w-[100%]">
+                <div class="text-yellow-600 font-extrabold lg:text-[25px] text-[20px]">
+                    <img src="C:\Users\Nexomos\Desktop\Tailwind\tronix-logo.jpg" alt="Web logo" class="w-[150px]">
+                </div>
+                <button
+                    class="flex justify-center items-center text-[28px] h-7 w-7 pb-1 text-center absolute border border-gray-400 bg-gray-100 top-5 z-40 -right-4 rounded-full lg:hidden text-black font-semibold"
+                    onclick="w3_close()"><span>&times;</span></button>
+            </div>
+            <div class="flex flex-col items-center space-y-8  mt-16">
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Home</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">About</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Services</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Page</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Blog</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Trionix_Contact.html"><button class="font-semibold text-[17px]">Contact</button></a>
+            </div>
+        </div>
+        <!-- sidebar ends -->
+        <div class="flex bg-[white] h-[50px] justify-between items-center md:px-[14%] text-[18px] pt-7 pl-3 pl-0">
+            <div>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix.html"><img src="C:\Users\Nexomos\Desktop\Tailwind\tronix-logo.jpg" alt="Web logo" class="md:w-[200px] w-[150px]"></a>
+            </div>
+            <div class="lg:flex hidden space-x-5">
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Home</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">About</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Services</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Page</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select>
+                        <option value="volvo">Blog</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Trionix_Contact.html"><button class="font-semibold text-[17px]">Contact</button></a>
+            </div>
+            <div class="h-[25px] w-[35px] md:h-[35px] md:w-[45px] bg-white lg:hidden flex justify-center items-center rounded-[5px]"
+                id="main">
+                <i class="fa-solid fa-bars text-blue-700 md:text-[25px]" id="openNav" onclick="w3_open()"></i>
+            </div>
+            <div class="xl:flex space-x-5 items-center hidden">
+                <div><i class="fa-solid fa-phone text-[25px] text-blue-700"></i></div>
+                <div class="text-[14px]">
+                    <div>Quick Call</div>
+                    <div>(904) 12-366-25</div>
+                </div>
+                <button type="button" class="px-5 py-2 rounded-full bg-blue-700 text-white font-semibold w-[150px]">Get
+                    Started</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar End -->
+
+
+    <div class="grid lg:grid-cols-2 grid-cols-1 h-screen px-[15%] mt-[15%]">
+        <div class="space-y-5">
+            <div class="text-[16px] flex items-center space-x-3">
+                <div><i class="fa-solid fa-square text-[11px] text-blue-700"></i></div>
+                <div>WELCOME TO OUR COMPANY</div>
+            </div>
+            <div class="font-bold lg:text-[50px] text-[30px]">
+                <div>Clear Thinking</div>
+                <div class="flex space-x-3">
+                    <div>Makes</div>
+                    <div class="text-blue-700">Bright Future!</div>
+                </div>
+            </div>
+            <div class="text-[16px] text-gray-500">The website design should be user-friendly, easy to navigate, and
+                aesthetically pleasing. It should be optimized for fast loading times, and the layout should be
+                consistent across all pages.</div>
+            <div class="flex sm:space-x-10">
+                <div><button type="button"
+                        class="px-5 py-2 rounded-full bg-blue-700 text-white font-semibold sm:w-[170px] w-[110px]">Discover
+                        More</button></div>
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-play text-blue-700 sm:text-[40px] text-[30px]"></i>
+                    <div>Watch Video</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="C:\Users\Nexomos\Desktop\Tailwind\men.png" alt="men">
+        </div>
+    </div>
+
+
+    <div class="h-full flex flex-col">
+        <div class="flex flex-col items-center w-[100%] space-y-5">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+                <div class="text-[14px]">OUR SERVICES</div>
+                <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+            </div>
+            <div class="font-bold md:text-[48px] text-[30px] sm:px-0 px-[17%]">Service We Provide</div>
+            <div class="text-gray-500 flex flex-col items-center sm:px-0 px-[17%]">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi obortis ligula</div>
+                <div>euismod sededesty am augue nisl.</div>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5 pt-20 lg:px-[12%] md:px-[6%] sm:px-[12%] px-[5%] pb-5">
+            <div class="border border-[2px] h-[350px] hover:shadow-xl pl-5 flex flex-col justify-evenly rounded-md">
+                <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\111.PNG" alt="sss"></div>
+                <div class="lg:text-[25px] md:text-[22px] font-semibold">Technology Solution</div>
+                <div class="text-gray-500">Risus turpis id mauris tellus ultricies cras nulla.</div>
+                <div><i class="fa-solid fa-arrow-right  fa-spin fa-spin-reverse text-[30px]"></i></div>
+            </div>
+            <div class="border border-[2px] h-[350px] hover:shadow-xl pl-5 flex flex-col justify-evenly rounded-md">
+                <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\2222.PNG" alt="sss"></div>
+                <div class="lg:text-[25px] md:text-[22px] font-semibold">IT Management Service</div>
+                <div class="text-gray-500">Developing a extensive IT strategy that aligns.</div>
+                <div><i class="fa-solid fa-arrow-right  fa-spin fa-spin-reverse text-[30px]"></i></div>
+            </div>
+            <div class="border border-[2px] h-[350px] hover:shadow-xl pl-5 flex flex-col justify-evenly rounded-md">
+                <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\333.PNG" alt="sss"></div>
+                <div class="lg:text-[25px] md:text-[22px] font-semibold">Website & Mobile App Design</div>
+                <div class="text-gray-500">Website and mobile apps design are critical.</div>
+                <div><i class="fa-solid fa-arrow-right  fa-spin fa-spin-reverse text-[30px]"></i></div>
+            </div>
+            <div class="border border-[2px] h-[350px] hover:shadow-xl pl-5 flex flex-col justify-evenly rounded-md">
+                <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\444.PNG" alt="sss"></div>
+                <div class="lg:text-[25px] md:text-[22px] font-semibold">Data Tracking Security</div>
+                <div class="text-gray-500">Encryption is a method of converting sensitive.</div>
+                <div><i class="fa-solid fa-arrow-right  fa-spin fa-spin-reverse text-[30px]"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid lg:grid-cols-2 grid-cols-1 lg:h-screen h-full bg-[#f0f3fe] p-[10%]">
+        <div class="space-y-3">
+            <div class="text-[16px] flex items-center space-x-3">
+                <div><i class="fa-solid fa-square text-[11px] text-blue-700"></i></div>
+                <div>WELCOME TO OUR COMPANY</div>
+            </div>
+            <div class="font-bold lg:text-[50px] text-[20px]">We Are Increasing Business Success With Technology</div>
+            <div class="text-gray-500 sm:text-[16px] text-[14px]">An IT solution service company may serve clients from
+                various industries such as
+                healthcare, finance, education, and manufacturing. They may work on a project basis, providing services
+                for a specific project or on a long-term basis...</div>
+            <div>
+                <div class="text-[16px] flex items-center space-x-3">
+                    <div><i class="fa-solid fa-square text-[5px]"></i></div>
+                    <div>Amazing communication.</div>
+                </div>
+                <div class="text-[16px] flex items-center space-x-3">
+                    <div><i class="fa-solid fa-square text-[5px]"></i></div>
+                    <div>Best trending designing experience</div>
+                </div>
+                <div class="text-[16px] flex items-center space-x-3">
+                    <div><i class="fa-solid fa-square text-[5px]"></i></div>
+                    <div>Email & Live chat.</div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\101.png" alt="" class="pl-[30px]"></div>
+        </div>
+    </div>
+    <div class="relative w-[100%] h-60 overflow-hidden mt-[5%]">
+        <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\coffee-break-1177540_1920.jpg" alt="aa"
+            class="object-cover w-full h-full opacity-[90%]" />
+        <div>
+            <div class="absolute w-full py-2.5 bottom-20 inset-x-0 text-white left-[10%] font-bold sm:text-[18px]">WE
+                ARE HERE TO ANSWER YOUR QUESTIONS 24/7</div>
+            <div class="absolute w-full py-2.5 bottom-10 inset-x-0 text-white left-[10%] font-bold sm:text-[25px]">Need
+                A Consultation?</div>
+            <button type="button"
+                class="px-5 py-2 rounded-full bg-blue-700 text-white sm:font-semibold w-[170px] absolute py-2.5 lg:bottom-20 sm:bottom-5 bottom-0 inset-x-0 text-white lg:left-[80%] sm:left-[60%] left-5 ">Let's
+                Get Started</button>
+        </div>
+    </div>
+    <div class="grid lg:grid-cols-2 p-[10%]">
+        <div class="space-y-5">
+            <div class="text-[16px] flex items-center space-x-3">
+                <div><i class="fa-solid fa-square text-[11px] text-blue-700"></i></div>
+                <div>WELCOME TO OUR COMPANY</div>
+            </div>
+            <div class="font-bold sm:text-[50px] text-[30px]">We Make Awesome IT Services For Your Newly Business</div>
+            <div class="flex pt-10  items-center space-x-5">
+                <div><button type="button"
+                        class="px-5 py-2 rounded-full bg-blue-700 text-white font-semibold w-[100%]">Start A
+                        Projects</button></div>
+                <div>
+                    <div class="text-blue-700 font-bold">Call Us: 258-3258 235</div>
+                    <div>For any question</div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\img-2.png" alt="" class="pl-[30px]"></div>
+        </div>
+    </div>
+    <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 px-[15%]">
+        <div class="flex items-center">
+            <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\1.png" class="h-[150px] w-[170px]"></div>
+            <div>
+                <div class="font-bold sm:text-[40px]">200+</div>
+                <div class="text-gray-600">TEAM MEMBER</div>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\2.png" class="h-[150px] w-[170px]"></div>
+            <div>
+                <div class="font-bold sm:text-[40px]">10+</div>
+                <div class="text-gray-600">COMPLETE PROJECT</div>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\3.png" class="h-[150px] w-[170px]"></div>
+            <div>
+                <div class="font-bold sm:text-[40px]">20+</div>
+                <div class="text-gray-600">WINNING AWARD</div>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\4.png" class="h-[150px] w-[130px]"></div>
+            <div>
+                <div class="font-bold sm:text-[40px]">900+</div>
+                <div class="text-gray-600">CLIENT REVIEW</div>
+            </div>
+        </div>
+    </div>
+    <div class="h-[800px] bg-[#0d1834] w-[100%] mt-16 flex flex-col justify-center">
+        <div class="sm:text-[16px] text-[14px] flex items-center space-x-3 text-white sm:pl-[120px] pl-5">
+            <div><i class="fa-solid fa-square text-[11px] text-blue-700 "></i></div>
+            <div>CLIENT TESTIMONIAL</div>
+        </div>
+        <div class="font-bold text-white sm:text-[50px] text-[25px] sm:pl-[120px] pl-5">About Customer Stories</div>
+        <div class="lg:w-[90%] w-[96%] mx-auto mt-[100px]">
+            <div class="slide">
+                <section class="dark:bg-gray-900">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <figure class="max-w-screen-md mx-auto">
+                            <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                            </svg> 
+                            <blockquote>
+                                <p class="sm:text-2xl font-medium text-white">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                    <div class="pr-3 font-medium text-white">Micheal Gough</div>
+                                    <div class="pl-3 text-sm font-light text-gray-400">CEO at Google</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <div class="slide">
+                <section class="dark:bg-gray-900">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <figure class="max-w-screen-md mx-auto">
+                            <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                            </svg> 
+                            <blockquote>
+                                <p class="sm:text-2xl font-medium text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa omnis quam est cupiditate maiores, facere optio vero, harum non labore voluptatum neque corporis doloremque modi quaerat eligendi, facilis placeat.</p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                <img class="w-6 h-6 rounded-full" src="data:image/jpeg;base64,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" alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                    <div class="pr-3 font-medium text-white">Mark</div>
+                                    <div class="pl-3 text-sm font-light text-gray-400">CEO at Facebook</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <div class="slide">
+                <section class="dark:bg-gray-900">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <figure class="max-w-screen-md mx-auto">
+                            <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                            </svg> 
+                            <blockquote>
+                                <p class="sm:text-2xl font-medium text-white">Again, I apologize for the confusion earlier, and I appreciate your patience. If you have any more questions or need further assistance, please feel free to ask!</p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                    <div class="pr-3 font-medium text-white">Kelvin</div>
+                                    <div class="pl-3 text-sm font-light text-gray-400">CEO at Nexomos</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <div class="flex justify-center items-center space-x-5">
+                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+                <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex flex-col mt-[7%]">
+        <div class="flex flex-col items-center pt[30%] w-[100%] space-y-5">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+                <div class="text-[14px]">TEAM MEMBERS</div>
+                <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+            </div>
+            <div class="font-bold sm:text-[48px] text-[20px]">Our Top Skilled Experts</div>
+        </div>
+        <div class="w-[100%] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-[5%] gap-5 place-items-center     py-5">
+
+            <div class="relative">
+                <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\img.jpg" />
+                <div class="absolute bottom-[25%] left-0 right-0 px-4 py-10 bg-white opacity-0 hover:opacity-100 duration-500 flex flex-col items-center rounded-md">
+                    <h1 class="font-bold text-[20px]">Ambert Daniel</h1>
+                    <p class="text-blue-700">CEO & Founder</p>
+                    <div class="flex mt-[10px] space-x-5">
+                        <div><i class="fa-brands fa-facebook-f text-blue-700 text-[25px]"></i></div>
+                        <div><i class="fa-brands fa-twitter text-blue-700 text-[25px]"></i></div>
+                        <div><i class="fa-brands fa-linkedin text-blue-700 text-[25px]"></i></div>
+                        <div><i class="fa-brands fa-instagram text-blue-700 text-[25px]"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\img1.jpg"/>
+                <div
+                    class="absolute bottom-[25%] left-0 right-0 px-4 py-10 bg-white opacity-0 hover:opacity-100 duration-500 flex flex-col items-center rounded-md">
+                    <h1 class="tracking-wider font-bold text-[20px]">Milano Digits</h1>
+                    <p class="mx-auto text-blue-700">Network Engineer</p>
+                    <div class="flex mt-[10px] space-x-5">
+                        <div><i class="fa-brands fa-facebook-f text-blue-700 text-[25px]"></i></div>
+                        <div><i class="fa-brands fa-twitter text-blue-700 text-[25px]"></i></div>
+                        <div><i class="fa-brands fa-linkedin text-blue-700 text-[25px]"></i></div>
+                        <div><i class="fa-brands fa-instagram text-blue-700 text-[25px]"></i></div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\img2.jpg" />
+                <div class="absolute bottom-[25%] left-0 right-0 px-4 py-10 bg-white opacity-0 hover:opacity-100 duration-500 flex flex-col items-center rounded-md">
+                    <h1 class="tracking-wider font-bold text-[20px]">Daniel Smith</h1>
+                        <p class="mx-auto text-blue-700">Digital Marketer</p>
+                        <div class="flex mt-[10px] space-x-5">
+                            <div><i class="fa-brands fa-facebook-f text-blue-700 text-[25px]"></i></div>
+                            <div><i class="fa-brands fa-twitter text-blue-700 text-[25px]"></i></div>
+                            <div><i class="fa-brands fa-linkedin text-blue-700 text-[25px]"></i></div>
+                            <div><i class="fa-brands fa-instagram text-blue-700 text-[25px]"></i></div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\img3.jpg" class="rounded-[12px]"/>
+                <div class="absolute bottom-[25%] left-0 right-0 px-4 py-10 bg-white opacity-0 hover:opacity-100 duration-500 flex flex-col items-center rounded-md">
+                    <h1 class="tracking-wider font-bold text-[20px]">Latina Lucas</h1>
+                        <p class="mx-auto text-blue-700">Network Engineer</p>
+                        <div class="flex mt-[10px] space-x-5">
+                            <div><i class="fa-brands fa-facebook-f text-blue-700 text-[25px]"></i></div>
+                            <div><i class="fa-brands fa-twitter text-blue-700 text-[25px]"></i></div>
+                            <div><i class="fa-brands fa-linkedin text-blue-700 text-[25px]"></i></div>
+                            <div><i class="fa-brands fa-instagram text-blue-700 text-[25px]"></i></div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sm:flex sm:justify-between sm:px-[150px] px-[10px] w-[100%] mt-[5%] space-y-5">
+        <div>
+            <div class="flex sm:items-center space-x-2">
+                <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+                <div class="text-[14px]">TEAM MEMBERS</div>
+            </div>
+            <div class="font-bold sm:text-[48px] text-[20px]">Our Top Skilled Experts</div>
+        </div>
+        <div class="sm:space-y-0 space-y-2">
+            <button type="button"
+                class="px-5 py-2 rounded-full bg-blue-700 text-white font-semibold w-[150px]">PREVIOUS</button>
+            <button type="button"
+                class="px-5 py-2 rounded-full bg-blue-700 text-white font-semibold w-[150px]">NEXT</button>
+        </div>
+    </div>
+
+    <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5 px-10 mt-[100px]">
+        <div class="group relative">
+            <img class="w-full object-cover rounded-md  h-[400px]"
+                src="C:\Users\Nexomos\Desktop\Tailwind\icons\01.jpg" />
+            <div class="absolute top-0 left-0 w-full rounded-md h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
+                <i class="fa-solid fa-magnifying-glass text-white sm:text-black sm:text-[20px] sm:border sm:bg-white sm:rounded-full sm:w-[10%] sm:h-[10%] pl-2 pt-2"></i>
+                <div class="text-white sm:text-[35px]">Software</div>
+                <div class="text-white sm:text-[25px]">Software Cloud Services</div>
+            </div>
+        </div>
+        <div class="group relative">
+            <img class="w-full object-cover rounded-md  h-[400px]"
+                src="C:\Users\Nexomos\Desktop\Tailwind\icons\02.jpg" />
+            <div class="absolute top-0 left-0 w-full rounded-md h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
+                <i class="fa-solid fa-magnifying-glass text-white sm:text-black sm:text-[20px] sm:border sm:bg-white sm:rounded-full sm:w-[10%] sm:h-[10%] pl-2 pt-2"></i>
+                <div class="text-white sm:text-[35px]">Software</div>
+                <div class="text-white sm:text-[25px]">Software Cloud Services</div>
+            </div>
+        </div>
+        <div class="group relative">
+            <img class="w-full object-cover rounded-md  h-[400px]"
+                src="C:\Users\Nexomos\Desktop\Tailwind\icons\03.jpg" />
+            <div class="absolute top-0 left-0 w-full rounded-md h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
+                <i class="fa-solid fa-magnifying-glass text-white sm:text-black sm:text-[20px] sm:border sm:bg-white sm:rounded-full sm:w-[10%] sm:h-[10%] pl-2 pt-2"></i>
+                <div class="text-white sm:text-[35px]">Software</div>
+                <div class="text-white sm:text-[25px]">Software Cloud Services</div>
+            </div>
+        </div>
+        <div class="group relative">
+            <img class="w-full object-cover rounded-md  h-[400px]"
+                src="C:\Users\Nexomos\Desktop\Tailwind\icons\04.jpg" />
+            <div class="absolute top-0 left-0 w-full rounded-md h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
+                <i class="fa-solid fa-magnifying-glass text-white sm:text-black sm:text-[20px] sm:border sm:bg-white sm:rounded-full sm:w-[10%] sm:h-[10%] pl-2 pt-2"></i>
+                <div class="text-white sm:text-[35px]">Software</div>
+                <div class="text-white sm:text-[25px]">Software Cloud Services</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex justify-center">
+        <div class="h-full bg-[#dde8fc] w-[80%] mt-[100px] rounded-[20px] md:flex sm:items-center">
+            <div class="space-y-3 sm:px-20 px-2">
+                <div class="text-[16px] flex items-center space-x-3">
+                    <div><i class="fa-solid fa-square text-[11px] text-blue-700"></i></div>
+                    <div class="sm:text-[16px] text-[12px]">START WORK WITH US</div>
+                </div>
+                <div class="font-bold md:text-[50px] text-[20px]">The Best IT Service Provider.</div>
+                <div class="text-gray-500 sm:text-[16px] text-[12px]">Managed IT services can help you outsource your IT needs to a third-party
+                    provider. This includes IT support, network monitoring, and maintenance, and disaster recovery and
+                    business continuity planning.</div>
+                <div class="">
+                    <button type="button" class="mt-10 sm:px-5 px-1 py-2 rounded-full bg-blue-700 text-white font-semibold sm-text-[16px] text-[12px]">Let's Get Started</button>
+                </div>
+            </div>
+            <div class="">
+                <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\heymen.png" alt="" class="md:h-[550px] mt-7"></div>
+                <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\screen.png" alt="" class="rounded-md"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex flex-col mt-[7%]">
+        <div class="flex flex-col items-center pt[30%] w-[100%] space-y-5">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+                <div class="text-[14px]">NEWS POSTS</div>
+                <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+            </div>
+            <div class="font-bold md:text-[48px] text-[20px]">Latest Blog Updates</div>
+        </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 px-[20%] gap-5 mt-[5%]">
+        <div class="h-[600px] border sm:space-x-5 space-x-2 rounded-md flex flex-col justify-between overflow-hidden">
+            <div class="flex flex-col justify-between">
+                <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog.jpg" alt="" class="sm:h-[320px] sm:w-[100%]">
+            </div>
+            <div class="sm:flex space-x-2 mt-3">
+                <div class="flex  items-center space-x-2 px-5 ">
+                    <i class="sm:text-[16px] text-[13px] fa-regular fa-calendar-days text-blue-700"></i>
+                    <div class="sm:text-[16px] text-[13px]">June 4, 2023</div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="sm:text-[16px] text-[13px] fa-regular fa-folder-open text-blue-700"></i>
+                    <div class="sm:text-[16px] text-[13px]">It Service</div>
+                </div>
+            </div>
+            <div class="font-bold md:text-[30px] px-5">Your Business Safe Ensure High Availability.</div>
+            <div class="text-gray-500 px-5 sm:text-[16px] text-[13px]">We’ve been a strategy thought leader for nearly five decades and we bring But we
+                ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor…</div>
+            <div><button type="button"
+                    class="sm:mt-5 mb-5 px-5 py-2 rounded-full border bg-white hover:bg-blue-700 hover:text-white text-blue-700 font-semibold">Read
+                    More</button></div>
+        </div>
+        <div class="h-[600px] border sm:space-x-5 space-x-2 rounded-md flex flex-col justify-between overflow-hidden">
+            <div class="flex flex-col justify-between rounded-md">
+                <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog1.jpg" alt="" class="sm:h-[320px] sm:w-[100%]">
+            </div>
+            <div class="sm:flex space-x-2 mt-3">
+                <div class="flex  px-5  items-center space-x-2">
+                    <i class="sm:text-[16px] text-[13px] fa-regular fa-calendar-days text-blue-700"></i>
+                    <div class="sm:text-[16px] text-[13px]">June 4, 2023</div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="sm:text-[16px] text-[13px] fa-regular fa-folder-open text-blue-700"></i>
+                    <div class="sm:text-[16px] text-[13px]">Circuitry</div>
+                </div>
+            </div>
+            <div class="font-bold md:text-[30px] px-5">Data Backup and Recovery Best Practices Small</div>
+            <div class="text-gray-500 px-5 sm:text-[16px] text-[13px]">We’ve been a strategy thought leader for nearly five decades and we bring But we
+                ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor…</div>
+            <div><button type="button"
+                    class="sm:mt-5 mb-5 px-5 py-2 rounded-full border bg-white hover:bg-blue-700 hover:text-white text-blue-700 font-semibold">Read
+                    More</button></div>
+        </div>
+    </div>
+    
+    
+    <div class="flex flex-col items-center mt-[7%] w-[100%] space-y-5">
+        <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+            <div class="text-[14px]">NEWS POSTS</div>
+            <i class="fa-solid fa-square text-[11px] text-blue-700"></i>
+        </div>
+        <div class="font-bold md:text-[48px] text-[20px]">Latest Blog Updates</div>
+    </div>
+
+    <div class="flex flex-col px-[5%] overflow-hidden w-[100]">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 py-10 sm:gap-y-[100px] rounded-md">
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\1.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\2.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\3.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\4.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 py-10 sm:gap-y-[100px]">
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\5.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\6.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\7.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+            <div class=" h-[200px] flex items-center justify-center border"><img src="C:\Users\Nexomos\Desktop\Tailwind\New folder\8.png" alt="image-one" class="w-[50%] h-[70px] py-5"></div>
+        </div>
+    </div>
+
+    <div class="w-[100%] h-full bg-[#04102a]">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 pt-[150px] px-[10%]">
+            <div class="sm:h-[240px] flex flex-col justify-between  py-5 px-5">
+                <div class="text-white font-semibold text-[30px]">About Us</div>
+                <div class="text-gray-400 ">An IT consultancy can help you assess your technology needs and develop a
+                    technology strategy that aligns with your business</div>
+                <div>
+                    <div class="flex mt-[10px] space-x-5">
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-facebook-f text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-twitter text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-linkedin text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-instagram text-blue-700 text-[18px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] space-y-2 items-center py-5 px-5">
+                <div>
+                    <a href="#" class="text-white font-semibold text-[30px]">Link</a>
+                </div>
+                <div class="space-y-1.5">
+                    <div><a href="#" class=" text-[14px] text-gray-400">About Us</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Mission</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Meet The Teams</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Projects</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] space-y-2 items-center py-5 px-5">
+                <div>
+                    <a href="#" class=" text-[14px] text-white font-semibold text-[30px]">Explore</a>
+                </div>
+                <div class="space-y-1.5">
+                    <div><a href="#" class=" text-[14px] text-gray-400">What we Offer</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Offer</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Story</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Latest Posts</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Help Center</a></div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] flex flex-col justify-between py-5 px-5">
+                <div><a href="#" class="text-white font-semibold text-[30px]">Recent Posts</a></div>
+                <div class="sm:flex">
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog.jpg" alt=""
+                            class="h-[50px] w-[50px] rounded-md"></div>
+                    <div class="flex flex-col">
+                        <div class="flex px-2">
+                            <div><i class="px-2 fa-regular fa-calendar-days text-white"></i></div>
+                            <div class="text-white">June 4, 2023</div>
+                        </div>
+                        <div class="text-white font-bold px-2 text-[18px]">Your Business Safe…</div>
+                    </div>
+
+                </div>
+                <div class="sm:flex items-center">
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog1.jpg" alt=""
+                            class="h-[50px] w-[50px] rounded-md"></div>
+                    <div class="flex flex-col">
+                        <div class="flex px-2">
+                            <div><i class="px-2 fa-regular fa-calendar-days text-white"></i></div>
+                            <div class="text-white">June 4, 2023</div>
+                        </div>
+                        <div class="text-white font-bold px-2 text-[18px]">Data Backup and…</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 mt-[100px]">
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-solid fa-location-dot text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Location</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">258 Daniel Mansion 258 Berlin
+                        Germany</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-regular fa-clock text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Working Hours</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">Weekdays 8am-22pm Weekend 10am
+                        -12pm</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-solid fa-phone-volume text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Contact Us</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">tronixinfo@tronix.com (+259)2257
+                        6156</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[100%] bg-[#152b54] h-[90px] font-semibold flex items-center justify-center text-white">
+            Copyright © 2023. All Rights Reserved.
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
+        // change slide with the prev/next button
+        function moveSlide(moveStep) {
+            showSlide(slideIndex += moveStep);
+        }
+        // change slide with the dots
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName('dot');
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            // hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.add('hidden');
+            }
+            // remove active status from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('bg-yellow-500');
+                dots[i].classList.add('bg-green-600');
+            }
+            // show the active slide
+            slides[slideIndex - 1].classList.remove('hidden');
+            // highlight the active dot
+            dots[slideIndex - 1].classList.remove('bg-green-600');
+            dots[slideIndex - 1].classList.add('bg-yellow-500');
+        }
+
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar");
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav");
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+
+</html>

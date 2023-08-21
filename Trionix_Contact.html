@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <div>
+        <!-- top-First-Nav -->
+        <div
+            class="flex sm:flex-row flex-col bg-[#dce7fd] sm:h-[50px] h-[100px] justify-between items-center px-[5%] lg:px-[15%] border-b border-gray-300 lg:text-[18px]">
+            <div>
+                Mon-Fri: 8:00 AM - 6:30 PM
+            </div>
+            <div class="flex sm:flex-row flex-col w-[100%] sm:w-auto text-[14px] sm:text-[16px]">
+                <div class="flex sm:w-[50%] space-x-5">
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_Services.html"><button class="w-[50%] md:w-auto">All Services</button></a>
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_project.html"><button class="w-[50%] md:w-auto">Careers</button></a>
+                </div>
+                <div class="flex sm:w-[50%] sm:flex-row items-center justify-center flex-col sm:space-x-5">
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_Blog_news.html"><div class=" sm:w-[30%] md:w-auto">News</div></a>
+                    <div class="flex space-x-2 sm:w-[70%] md:w-auto">
+                        <div><i class="fa-regular fa-envelope"></i></div>
+                        <div>media@tronix.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- top-Second-Nav -->
+
+        <!-- sidebar on lg -->
+        <div class="w-[230px] bg-[#dce7fd] h-screen fixed left-0 z-30 top-0 lg:hidden border" id="mySidebar">
+            <div class="flex justify-between p-5 w-[100%]">
+                <div class="text-yellow-600 font-extrabold lg:text-[25px] text-[20px]">
+                    <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\logo.png" alt="Web logo" class="w-[150px]">
+                </div>
+                <button
+                    class="flex justify-center items-center text-[28px] h-7 w-7 pb-1 text-center absolute border border-gray-400 bg-gray-100 top-5 z-40 -right-4 rounded-full lg:hidden text-black font-semibold"
+                    onclick="w3_close()"><span>&times;</span></button>
+            </div>
+            <div class="flex flex-col items-center space-y-8  mt-16">
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Home</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">About</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Services</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Page</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Blog</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Trionix_Contact.html"><button class="font-semibold text-[17px]">Contact</button></a>
+            </div>
+        </div>
+        <!-- sidebar ends -->
+        <div class="flex bg-[#dce7fd] h-[50px] justify-between items-center md:px-[14%] text-[18px] pt-7 pl-3 pl-0">
+            <div>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix.html"><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\logo.png" alt="Web logo"
+                    class="md:w-[200px] w-[150px]"></a>
+            </div>
+            <div class="lg:flex hidden space-x-5">
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Home</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">About</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Services</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Page</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Blog</option>
+                        <option value="saab">Saab</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Trionix_Contact.html"><button class="font-semibold text-[17px]">Contact</button></a>
+            </div>
+            <div class="h-[25px] w-[35px] md:h-[35px] md:w-[45px] bg-white lg:hidden flex justify-center items-center rounded-[5px]"
+                id="main">
+                <i class="fa-solid fa-bars text-blue-700 md:text-[25px]" id="openNav" onclick="w3_open()"></i>
+            </div>
+            <div class="xl:flex space-x-5 items-center hidden">
+                <div><i class="fa-solid fa-phone text-[25px] text-blue-700"></i></div>
+                <div class="text-[14px]">
+                    <div>Quick Call</div>
+                    <div>(904) 12-366-25</div>
+                </div>
+                <button type="button" class="px-5 py-2 rounded-full bg-blue-700 text-white font-semibold w-[150px]">Get
+                    Started</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar End -->
+
+    <div class="w-[100%] h-[400px] bg-[#dce7fd] flex flex-col justify-center items-center">
+        <div class="text-black text-[50px] font-semibold">Contact</div>
+        <div>Tronix > Contact</div>
+    </div>
+
+    <div class="w-[100%] flex justify-center items-center ">
+        <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 lg:w-[75%] w-[90%] py-[80px] mt-[100px] divide-x border rounded-[20px] gap-y-[80px]">
+            <div class="flex items-center justify-center">
+                <div class="w-[70px] h-[70px] rounded-full bg-gray-100 flex justify-center items-center"><i
+                        class="text-blue-700 text-[20px] fa-solid fa-phone"></i></div>
+                <div>
+                    <div class="px-3 text-[20px] font-semibold">Phone Number</div>
+                    <div class="px-3 text-gray-500 text-[16px] pt-2">+569 (58) 3259-3256 <br> +569 (58) 3259-3256</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="w-[70px] h-[70px] rounded-full bg-gray-100 flex justify-center items-center"><i
+                        class="text-blue-700 text-[20px] fa-regular fa-envelope"></i></div>
+                <div>
+                    <div class="px-3 text-[20px] font-semibold">Email Address</div>
+                    <div class="px-3 text-gray-500 text-[15px] pt-2">info@tronix.com <br> inside.24tronix.com</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="w-[70px] h-[70px] rounded-full bg-gray-100 flex justify-center items-center"><i
+                        class="px-3 text-blue-700 text-[20px] fa-solid fa-location-dot"></i></div>
+                <div>
+                    <div class="px-3 text-[20px] font-semibold">Office Address</div>
+                    <div class="px-3 text-gray-500 text-[16px] pt-2">25 Hilton Street, <br> Miana Frankfurt. DE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[100%] flex justify-center items-center">
+        <div class="lg:flex justify-between lg:w-[75%] w-[90%] mt-[100px] md:rounded-[20px] rounded-[15px] bg-[#eff1f5] lg:p-24 sm:p-10 p-3 lg:space-y-0 space-y-5 space-x-1">
+            <div class="lg:w-[40%] space-y-8">
+                <div class="lg:text-[48px] text-[25px] font-semibold">We'd love to hear from you.</div>
+                <div class="text-gray-500 lg:text-[16px] text-[14px]">At our IT solution company, we are committed to
+                    providing exceptional customer service and support. If you are experiencing technical difficulties
+                    or need assistance with one of our services,</div>
+                <div class="lg:text-[20px] font-semibold">Your benefits:</div>
+                <div class="xl:flex xl:space-x-8">
+                    <div>
+                        <div><i class="fa-regular fa-circle-check text-blue-400 p-2 xl:text-[16px] text-[13px]"></i><span class="text-gray-500 xl:text-[16px] text-[13px]">Client-oriented</div></span>
+                        <div><i class="fa-regular fa-circle-check text-blue-400 p-2 xl:text-[16px] text-[13px]"></i><span class="text-gray-500 xl:text-[16px] text-[13px]">Competent</div></span>
+                        <div><i class="fa-regular fa-circle-check text-blue-400 p-2 xl:text-[16px] text-[13px]"></i><span class="text-gray-500 xl:text-[16px] text-[13px]">Problem-solving</div></span>
+                    </div>
+                    <div>
+                        <div><i class="fa-regular fa-circle-check text-blue-400 p-2 xl:text-[16px] text-[13px]"></i><span class="text-gray-500 xl:text-[16px] text-[13px]">Independent</div></span>
+                        <div><i class="fa-regular fa-circle-check text-blue-400 p-2 xl:text-[16px] text-[13px]"></i><span class="text-gray-500 xl:text-[16px] text-[13px]">Results-driven</div></span>
+                        <div><i class="fa-regular fa-circle-check text-blue-400 p-2 xl:text-[16px] text-[13px]"></i><span class="text-gray-500 xl:text-[16px] text-[13px]">Transparent</div></span>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-[55%]">
+                <div class="sm:space-y-8 space-y-2">
+                    <div class="sm:flex sm:space-x-5 space-y-2 sm:space-y-0">
+                        <input type="text" name="your name" class="w-[50%] md:h-[55px] h-[45px] sm:px-4 px-1 placeholder-gray-500 md:rounded-lg rounded-md " placeholder="Your Name">
+                        <input type="email" name="your name" class="w-[50%] md:h-[55px] h-[45px] sm:px-4 px-1 placeholder-gray-500 md:rounded-lg rounded-md" placeholder="Email Address">
+                    </div>
+                    <select class="text-gray-500 w-[100%] md:h-[55px] h-[45px] sm:px-4 px-1 md:rounded-lg rounded-md">
+                        <option value="volvo">Basic</option>
+                        <option value="saab">Advance</option>
+                    </select>
+                    <textarea type="message" name="your name" class="placeholder-gray-500 w-[100%] h-[210px] sm:px-4 px-1 py-3 md:rounded-lg rounded-md" placeholder="Message"></textarea>
+                    <input type="button" value="Submit" class="w-[100%] md:h-[55px] h-[45px] sm:px-4 px-1 md:rounded-lg rounded-md hover:bg-gray-800 bg-[#0e59f2] text-white font-semibold text-[20px]">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-[100%] h-full bg-[#04102a] mt-16">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 pt-[150px] px-[10%]">
+            <div class="sm:h-[240px] flex flex-col justify-between  py-5 px-5">
+                <div class="text-white font-semibold text-[30px]">About Us</div>
+                <div class="text-gray-400 ">An IT consultancy can help you assess your technology needs and develop
+                    a
+                    technology strategy that aligns with your business</div>
+                <div>
+                    <div class="flex mt-[10px] space-x-5">
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-facebook-f text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-twitter text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-linkedin text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-instagram text-blue-700 text-[18px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] space-y-2 items-center py-5 px-5">
+                <div>
+                    <a href="#" class="text-white font-semibold text-[30px]">Link</a>
+                </div>
+                <div class="space-y-1.5">
+                    <div><a href="#" class=" text-[14px] text-gray-400">About Us</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Mission</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Meet The Teams</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Projects</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] space-y-2 items-center py-5 px-5">
+                <div>
+                    <a href="#" class=" text-[14px] text-white font-semibold text-[30px]">Explore</a>
+                </div>
+                <div class="space-y-1.5">
+                    <div><a href="#" class=" text-[14px] text-gray-400">What we Offer</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Offer</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Story</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Latest Posts</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Help Center</a></div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] flex flex-col justify-between py-5 px-5">
+                <div><a href="#" class="text-white font-semibold text-[30px]">Recent Posts</a></div>
+                <div class="sm:flex">
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog.jpg" alt=""
+                            class="h-[50px] w-[50px] rounded-md"></div>
+                    <div class="flex flex-col">
+                        <div class="flex px-2">
+                            <div><i class="px-2 fa-regular fa-calendar-days text-white"></i></div>
+                            <div class="text-white">June 4, 2023</div>
+                        </div>
+                        <div class="text-white font-bold px-2 text-[18px]">Your Business Safe…</div>
+                    </div>
+
+                </div>
+                <div class="sm:flex items-center">
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog1.jpg" alt=""
+                            class="h-[50px] w-[50px] rounded-md"></div>
+                    <div class="flex flex-col">
+                        <div class="flex px-2">
+                            <div><i class="px-2 fa-regular fa-calendar-days text-white"></i></div>
+                            <div class="text-white">June 4, 2023</div>
+                        </div>
+                        <div class="text-white font-bold px-2 text-[18px]">Data Backup and…</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 mt-[100px]">
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-solid fa-location-dot text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Location</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">258 Daniel Mansion 258 Berlin
+                        Germany</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-regular fa-clock text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Working Hours</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">Weekdays 8am-22pm Weekend 10am
+                        -12pm</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-solid fa-phone-volume text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Contact Us</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">tronixinfo@tronix.com
+                        (+259)2257
+                        6156</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[100%] bg-[#152b54] h-[90px] font-semibold flex items-center justify-center text-white">
+            Copyright © 2023. All Rights Reserved.
+        </div>
+    </div>
+    <!-- footer ends -->
+
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar");
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav");
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+
+</html>

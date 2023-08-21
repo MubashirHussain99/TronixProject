@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!-- navbar -->
+     <div>
+        <!-- top-First-Nav -->
+        <div
+            class="flex sm:flex-row flex-col bg-[#dce7fd] sm:h-[50px] h-[100px] justify-between items-center px-[5%] lg:px-[15%] border-b border-gray-300 lg:text-[18px]">
+            <div>
+                Mon-Fri: 8:00 AM - 6:30 PM
+            </div>
+            <div class="flex sm:flex-row flex-col w-[100%] sm:w-auto text-[14px] sm:text-[16px]">
+                <div class="flex sm:w-[50%] space-x-5">
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_Services.html"><button class="w-[50%] md:w-auto">All Services</button></a>
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_project.html"><button class="w-[50%] md:w-auto">Careers</button></a>
+                </div>
+                <div class="flex sm:w-[50%] sm:flex-row items-center justify-center flex-col sm:space-x-5">
+                    <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix_Blog_news.html"><div class=" sm:w-[30%] md:w-auto">News</div></a>
+                    <div class="flex space-x-2 sm:w-[70%] md:w-auto">
+                        <div><i class="fa-regular fa-envelope"></i></div>
+                        <div>media@tronix.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- top-Second-Nav -->
+
+        <!-- sidebar on lg -->
+        <div class="w-[230px] bg-[#dce7fd] h-screen fixed left-0 z-30 top-0 lg:hidden border" id="mySidebar">
+            <div class="flex justify-between p-5 w-[100%]">
+                <div class="text-yellow-600 font-extrabold lg:text-[25px] text-[20px]">
+                    <img src="C:\Users\Nexomos\Desktop\Tailwind\icons\logo.png" alt="Web logo" class="w-[150px]">
+                </div>
+                <button
+                    class="flex justify-center items-center text-[28px] h-7 w-7 pb-1 text-center absolute border border-gray-400 bg-gray-100 top-5 z-40 -right-4 rounded-full lg:hidden text-black font-semibold"
+                    onclick="w3_close()"><span>&times;</span></button>
+            </div>
+            <div class="flex flex-col items-center space-y-8  mt-16">
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Home</option>
+                        <option value="saab">Saab</option>
+                       <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">About</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Services</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Page</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Blog</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Trionix_Contact.html"><button class="font-semibold text-[17px]">Contact</button></a>
+            </div>
+        </div>
+        <!-- sidebar ends -->
+        <div class="flex bg-[#dce7fd] h-[50px] justify-between items-center md:px-[14%] text-[18px] pt-7 pl-3 pl-0">
+            <div>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Tronix.html"><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\logo.png" alt="Web logo"
+                    class="md:w-[200px] w-[150px]"></a>
+            </div>
+            <div class="lg:flex hidden space-x-5">
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Home</option>
+                        <option value="saab">Saab</option>
+                       <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">About</option>
+                        <option value="saab">Saab</option>
+                       <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Services</option>
+                        <option value="saab">Saab</option>
+                       <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Page</option>
+                        <option value="saab">Saab</option>
+                       <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <button class="font-semibold text-[17px]">
+                    <select class="bg-[#dce7fd]">
+                        <option value="volvo">Blog</option>
+                        <option value="saab">Saab</option>
+                       <option value="audi">Audi</option>
+                    </select>
+                </button>
+                <a href="C:\Users\Nexomos\Desktop\Tailwind\Trionix_Contact.html"><button class="font-semibold text-[17px]">Contact</button></a>
+            </div>
+            <div class="h-[25px] w-[35px] md:h-[35px] md:w-[45px] bg-white lg:hidden flex justify-center items-center rounded-[5px]"
+                id="main">
+                <i class="fa-solid fa-bars text-blue-700 md:text-[25px]" id="openNav" onclick="w3_open()"></i>
+            </div>
+            <div class="xl:flex space-x-5 items-center hidden">
+                <div><i class="fa-solid fa-phone text-[25px] text-blue-700"></i></div>
+                <div class="text-[14px]">
+                    <div>Quick Call</div>
+                    <div>(904) 12-366-25</div>
+                </div>
+                <button type="button" class="px-5 py-2 rounded-full bg-blue-700 text-white font-semibold w-[150px]">Get
+                    Started</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar End -->
+
+    <div class="w-[100%] h-[400px] bg-[#dce7fd] flex flex-col justify-center items-center">
+        <div class="text-black sm:text-[50px] text-[30px] font-semibold">Blog Standard</div>
+        <div>Tronix > Blog</div>
+    </div>
+
+    <div class="xl:flex px-[15%] xl:space-x-10">
+        
+        <div class="xl:w-[65%] space-y-8 py-16">
+            <div class="sm:h-[700px] border sm:space-x-5 space-x-2 rounded-md flex flex-col justify-between overflow-hidden">
+                <div class="flex flex-col justify-between h-[50%]">
+                    <img src="C:\Users\Nexomos\Desktop\Tailwind\blog1.jpg" alt="" class="sm:h-[400px] sm:w-[100%]">
+                </div>
+                <div>
+                    <div class="flex space-x-2 mt-10">
+                        <div class="flex  items-center sm:space-x-2 sm:px-5">
+                            <i class="sm:text-[16px] text-[10px] fa-regular fa-user text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[10px]">Tronix</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-calendar-check text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]"> June 13, 2023</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-folder text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]">Batteries</div>
+                        </div>
+                    </div>
+                    <div class="font-bold sm:text-[30px] px-5">What’s the Holding Back the It Solution Industry?</div>
+                    <div class="text-gray-500 px-5 sm:text-[16px] text-[13px]">We’ve been a strategy thought leader for nearly five decades and we bring But we ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor incididunt laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure [...]</div>
+                    <div><button type="button" class="sm:mt-5 mb-5 px-5 py-2 rounded-full border bg-white hover:bg-blue-700 hover:text-white text-blue-700 font-semibold">Read More</button></div>
+                </div>
+            </div>
+
+            <div class="sm:h-[700px] border sm:space-x-5 space-x-2 rounded-md flex flex-col justify-between overflow-hidden">
+                <div class="flex flex-col justify-between h-[50%]">
+                    <img src="C:\Users\Nexomos\Desktop\Tailwind\blog2.jpg" alt="" class="sm:h-[400px] sm:w-[100%]">
+                </div>
+                <div>
+                    <div class="flex space-x-2 mt-10">
+                        <div class="flex  items-center sm:space-x-2 sm:px-5">
+                            <i class="sm:text-[16px] text-[10px] fa-regular fa-user text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[10px]">Tronix</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-calendar-check text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]"> June 13, 2023</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-folder text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]">It Service</div>
+                        </div>
+                    </div>
+                    <div class="font-bold sm:text-[30px] px-5">What’s the Holding Back the It Solution Industry?</div>
+                    <div class="text-gray-500 px-5 sm:text-[16px] text-[13px]">We’ve been a strategy thought leader for nearly five decades and we bring But we ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor incididunt laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure [...]</div>
+                    <div><button type="button" class="sm:mt-5 mb-5 px-5 py-2 rounded-full border bg-white hover:bg-blue-700 hover:text-white text-blue-700 font-semibold">Read More</button></div>
+                </div>
+            </div>
+
+            <div class="sm:h-[700px] border sm:space-x-5 space-x-2 rounded-md flex flex-col justify-between overflow-hidden">
+                <div class="flex flex-col justify-between h-[50%]">
+                    <img src="C:\Users\Nexomos\Desktop\Tailwind\blog3.jpg" alt="" class="sm:h-[400px] sm:w-[100%]">
+                </div>
+                <div>
+                    <div class="flex space-x-2 mt-10">
+                        <div class="flex  items-center sm:space-x-2 sm:px-5">
+                            <i class="sm:text-[16px] text-[10px] fa-regular fa-user text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[10px]">Tronix</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-calendar-check text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]"> June 13, 2023</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-folder text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]">Software</div>
+                        </div>
+                    </div>
+                    <div class="font-bold sm:text-[30px] px-5">This Week’s Top Stories About It Solution?</div>
+                    <div class="text-gray-500 px-5 sm:text-[16px] text-[13px]">We’ve been a strategy thought leader for nearly five decades and we bring But we ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor incididunt laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure [...]</div>
+                    <div><button type="button" class="sm:mt-5 mb-5 px-5 py-2 rounded-full border bg-white hover:bg-blue-700 hover:text-white text-blue-700 font-semibold">Read More</button></div>
+                </div>
+            </div>
+            
+            
+            <div class="sm:h-[700px] border sm:space-x-5 space-x-2 rounded-md flex flex-col justify-between overflow-hidden">
+                <div class="flex flex-col justify-between h-[50%]">
+                    <img src="C:\Users\Nexomos\Desktop\Tailwind\blog4.jpg" alt="" class="sm:h-[400px] sm:w-[100%]">
+                </div>
+                <div>
+                    <div class="flex space-x-2 mt-10">
+                        <div class="flex  items-center sm:space-x-2 sm:px-5">
+                            <i class="sm:text-[16px] text-[10px] fa-regular fa-user text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[10px]">Tronix</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-calendar-check text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]"> June 13, 2023</div>
+                        </div>
+                        <div class="flex items-center sm:space-x-2">
+                            <i class="sm:text-[16px] text-[13px] fa-regular fa-folder text-blue-700"></i>
+                            <div class="sm:text-[16px] text-[13px]">Circuitry</div>
+                        </div>
+                    </div>
+                    <div class="font-bold sm:text-[30px] px-5">How to Choose the Right Managed IT Services</div>
+                    <div class="text-gray-500 px-5 sm:text-[16px] text-[13px]">We’ve been a strategy thought leader for nearly five decades and we bring But we ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor incididunt laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure [...]</div>
+                    <div><button type="button" class="sm:mt-5 mb-5 px-5 py-2 rounded-full border bg-white hover:bg-blue-700 hover:text-white text-blue-700 font-semibold">Read More</button></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="xl:w-[35%] flex flex-col items-center mt-11 py-5 space-y-8">
+            <div class="flex w-[100%] border-[2px] border-shadow xl:h-[4%] justify-center items-center rounded-xl px-5 py-[5%] xl:py-0">
+                <input type="search" name="search" id="search" placeholder=" search..." class="w-[120%] h-[50px] rounded-md border-[2px] border-shadow">
+                <div><button class="bg-blue-700 w-[50px] h-[50px] rounded-[10px]"><i class="fa-solid fa-magnifying-glass text-white text-[14px]"></i></button></div>
+            </div>
+
+            <div class="w-[100%] border-[2px] border-shadow h-[16%] rounded-xl pl-[8%] py-[5%] xl:py-0">
+                <div><a href="#" class="text-black font-semibold text-[30px]">Recent Posts</a></div>
+                <div class="flex flex-col mt-5 space-y-5">
+                    <div class="flex">
+                        <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog.jpg" alt=""
+                                class="h-[80px] w-[100px] rounded-md"></div>
+                        <div class="flex flex-col">
+                            <div class="text-black font-bold px-2 text-[15px]">Your Business Safe <br> Ensure High…</div>
+                            <div class="flex px-2 text-gray-500 text-[13px]">
+                                <div><i class="px-2 fa-regular fa-calendar-days"></i></div>
+                                <div>June 4, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div><img src="C:\Users\Nexomos\Desktop\Tailwind\blog2.jpg" alt=""
+                                class="h-[80px] w-[100px] rounded-md"></div>
+                        <div class="flex flex-col">
+                            <div class="text-black font-bold px-2 text-[15px]">Data Backup and <br> Recovery Best…</div>
+                            <div class="flex px-2 text-gray-500 text-[13px]">
+                                <div><i class="px-2 fa-regular fa-calendar-days"></i></div>
+                                <div>June 4, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div><img src="C:\Users\Nexomos\Desktop\Tailwind\blog4.jpg" alt=""
+                                class="h-[80px] w-[100px] rounded-md"></div>
+                        <div class="flex flex-col">
+                            <div class="text-black font-bold px-2 text-[15px]">Small Business Disaster  <br> Recovery Planning</div>
+                            <div class="flex px-2 text-gray-500 text-[13px]">
+                                <div><i class="px-2 fa-regular fa-calendar-days"></i></div>
+                                <div>June 4, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div><img src="C:\Users\Nexomos\Desktop\Tailwind\blog3.jpg" alt=""
+                                class="h-[80px] w-[100px] rounded-md"></div>
+                        <div class="flex flex-col">
+                            <div class="text-black font-bold px-2 text-[15px]">How to Choose the <br> Right…</div>
+                            <div class="flex px-2 text-gray-500 text-[13px]">
+                                <div><i class="px-2 fa-regular fa-calendar-days"></i></div>
+                                <div>June 4, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-[100%] border-[2px] border-shadow h-[14%] rounded-xl px-10 space-y-8 py-[5%] xl:py-0">
+                <div  class="sm:text-[30px] text-[20px] font-semibold  mt-8">Category</div>
+                <div class="grid grid-rows-5 divide-y gap-3">
+                    <div class="flex items-center space-x-2 py-2">
+                        <div class="text-gray-500  text-[10px]  hover:text-blue-700">>></div>
+                        <div class="text-gray-500 sm:text-[20px]  hover:text-blue-700">Batteries</div>
+                    </div>
+                    <div class="flex items-center space-x-2 py-2">
+                        <div class="text-gray-500  text-[10px]  hover:text-blue-700">>></div>
+                        <div class="text-gray-500 sm:text-[20px]  hover:text-blue-700">Business</div>
+                    </div>
+                    <div class="flex items-center space-x-2 py-2">
+                        <div class="text-gray-500  text-[10px]  hover:text-blue-700">>></div>
+                        <div class="text-gray-500 sm:text-[20px]  hover:text-blue-700">Circuitry</div>
+                    </div>
+                    <div class="flex items-center space-x-2 py-2">
+                        <div class="text-gray-500  text-[10px]  hover:text-blue-700">>></div>
+                        <div class="text-gray-500 sm:text-[20px]  hover:text-blue-700">It Service</div>
+                    </div>
+                    <div class="flex items-center space-x-2 py-2">
+                        <div class="text-gray-500  text-[10px]  hover:text-blue-700">>></div>
+                        <div class="text-gray-500 sm:text-[20px]  hover:text-blue-700">Software</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[100%] border-[2px] border-shadow h-[14%] rounded-xl sm:px-10 space-y-5 xl:h-[15%] 2xl:h-[13%] py-[5%] xl:py-0">
+                <div  class="sm:text-[30px] text-[20px] font-semibold mt-8">Popular Tag</div>
+                <div class="space-x-2 space-y-2">
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">AUDIO</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">BACKUP</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">BUGGEST</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">Business</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">DATA</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">IT</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">MANAGEMNT</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">RECOVERY</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">SERVICE</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">SOFWARE</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">TECHNOLOGY</button>
+                    <button class="border-[1px] border-shadow hover:bg-blue-700 hover:text-white sm:px-4 px-1 py-1 rounded-lg">WEB</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="w-[100%] h-full bg-[#04102a] mt-16">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 pt-[150px] px-[10%]">
+            <div class="sm:h-[240px] flex flex-col justify-between  py-5 px-5">
+                <div class="text-white font-semibold text-[30px]">About Us</div>
+                <div class="text-gray-400 ">An IT consultancy can help you assess your technology needs and develop
+                    a
+                    technology strategy that aligns with your business</div>
+                <div>
+                    <div class="flex mt-[10px] space-x-5">
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-facebook-f text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-twitter text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-linkedin text-blue-700 text-[18px]"></i>
+                        </div>
+                        <div><i
+                                class="bg-[#15284c] text-white rounded-full sm:h-[35px] sm:w-[35px] flex justify-center items-center fa-brands fa-instagram text-blue-700 text-[18px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] space-y-2 items-center py-5 px-5">
+                <div>
+                    <a href="#" class="text-white font-semibold text-[30px]">Link</a>
+                </div>
+                <div class="space-y-1.5">
+                    <div><a href="#" class=" text-[14px] text-gray-400">About Us</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Mission</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Meet The Teams</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Projects</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] space-y-2 items-center py-5 px-5">
+                <div>
+                    <a href="#" class=" text-[14px] text-white font-semibold text-[30px]">Explore</a>
+                </div>
+                <div class="space-y-1.5">
+                    <div><a href="#" class=" text-[14px] text-gray-400">What we Offer</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Offer</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Our Story</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Latest Posts</a></div>
+                    <div><a href="#" class=" text-[14px] text-gray-400">Help Center</a></div>
+                </div>
+            </div>
+            <div class="sm:h-[240px] flex flex-col justify-between py-5 px-5">
+                <div><a href="#" class="text-white font-semibold text-[30px]">Recent Posts</a></div>
+                <div class="sm:flex">
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog.jpg" alt=""
+                            class="h-[50px] w-[50px] rounded-md"></div>
+                    <div class="flex flex-col">
+                        <div class="flex px-2">
+                            <div><i class="px-2 fa-regular fa-calendar-days text-white"></i></div>
+                            <div class="text-white">June 4, 2023</div>
+                        </div>
+                        <div class="text-white font-bold px-2 text-[18px]">Your Business Safe…</div>
+                    </div>
+
+                </div>
+                <div class="sm:flex items-center">
+                    <div><img src="C:\Users\Nexomos\Desktop\Tailwind\icons\blog1.jpg" alt=""
+                            class="h-[50px] w-[50px] rounded-md"></div>
+                    <div class="flex flex-col">
+                        <div class="flex px-2">
+                            <div><i class="px-2 fa-regular fa-calendar-days text-white"></i></div>
+                            <div class="text-white">June 4, 2023</div>
+                        </div>
+                        <div class="text-white font-bold px-2 text-[18px]">Data Backup and…</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 mt-[100px]">
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-solid fa-location-dot text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Location</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">258 Daniel Mansion 258 Berlin
+                        Germany</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-regular fa-clock text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Working Hours</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">Weekdays 8am-22pm Weekend 10am
+                        -12pm</div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-[230px] border border-gray-400 sm:space-x-5 space-x-2">
+                <div
+                    class="sm:w-[80px] sm:h-[80px] sm:w-[50px] sm:h-[20px] rounded-full bg-[#152b54] flex justify-center items-center">
+                    <i class="fa-solid fa-phone-volume text-white text-[25px]"></i>
+                </div>
+                <div>
+                    <div class=" sm:text-[14px] text-white font-semibold md:text-[20px] mr-10">Contact Us</div>
+                    <div class=" sm:text-[16px] text-[10px] text-gray-400 mt-2 mr-16">tronixinfo@tronix.com
+                        (+259)2257
+                        6156</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[100%] bg-[#152b54] h-[90px] font-semibold flex items-center justify-center text-white">
+            Copyright © 2023. All Rights Reserved.
+        </div>
+    </div>
+    <!-- footer ends -->
+
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar");
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav");
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>

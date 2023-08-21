@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sm:flex bg-blue-400 sm:h-[50px] justify-between sm:items-center px-10 text-white">
+        <div class="flex justify-between items-center">
+            <div class="font-bold text-[orange] text-[25px]">
+                <div>Navbar</div>
+            </div>
+            <div class="sm:invisible text-[25px]" id="navbar-toggler">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="sm:flex flex flex-col sm:flex-row sm:space-x-5 fixed xl1:top-10 right-0 bg-blue-400 pr-[10px] sm:space-x-3 px-3" id="navbar-menu">
+            <div>Contact</div>
+            <div>Support</div>
+            <div>Account</div>
+            <div>
+                <select class="bg-blue-400 border sm:shadow">
+                    <option value="volvo">Dropdown</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menu = document.getElementById('navbar-menu');
+
+            document.getElementById('navbar-toggler').addEventListener('click', event => {
+                menu.classList.toggle('hidden');
+            })
+        })
+    </script>
+</body>
+
+</html>
